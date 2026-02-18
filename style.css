@@ -1,0 +1,472 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #020B0F;
+    color: #C8C1B1;
+    font-family: poppins, sans-serif;
+    overflow-x: hidden;
+}
+
+picture {
+    width: 100%;
+}
+
+button {
+    font-family: poppins, sans-serif;
+}
+
+/* ---------------- HEADER ---------------- */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4vw;
+    position: absolute;
+    z-index: 9;
+}
+
+header .logodisneyplus {
+    width: 8vw;
+}
+
+/* ---------------- SECTION GLOBAL ---------------- */
+
+section {
+    width: 100%;
+    padding: 0vw 13vw 9vw 13vw;
+}
+
+/* ---------------- HERO ---------------- */
+
+.Hero {
+    background-position: 50% 0%;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4vw 13vw 20vw 13vw;
+    position: relative;
+    top: 0;
+
+    .bg1{
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width:100%;
+        object-fit:cover;
+    }
+
+     .bg2{
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width:100%;
+        object-fit:cover;
+    }
+}
+
+.Hero .Logotitulo {
+    width: 40%;
+    padding: 6vw 0;
+    z-index: 2;
+}
+
+.Hero .Logotitulo .Logopercy {
+    width: 30vw;
+}
+
+.Hero .texto1 {
+    width: 35%;
+    z-index: 2;
+}
+
+.Hero .texto1 h2 {
+    margin-bottom: 32px;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.Hero .texto1 p {
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+
+/* ---------------- IBIRA ---------------- */
+
+.ibira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #020B0F;
+    z-index: 3;
+}
+
+.ibira h2 {
+    font-size: 2vw;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 8vh;
+    z-index: 2;
+}
+
+.ibira .corpo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 2;
+}
+
+.ibira .corpo .card1 {
+    width: 40vw;
+    padding-right: 3vw;
+}
+
+.ibira .corpo p {
+    font-size: 1.4vw;
+    width: 50%;
+}
+
+/* ---------------- ATORES ---------------- */
+
+.atores {
+    text-align: center;
+}
+
+.atores h2 {
+    font-size: 2vw;
+    padding-bottom: 8vh;
+}
+
+.atores .corpo p {
+    font-size: 1.4vw;
+    padding-bottom: 8vh;
+}
+
+.atores .cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.atores .cards img {
+    height: 50vh;
+}
+
+/* ---------------- PROGRAMAÇÃO ---------------- */
+
+.programaçao h2 {
+    font-size: 2vw;
+    margin-bottom: 8vh;
+}
+
+.programaçao .corpo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.4vw;
+}
+
+.programaçao .patrocinadores {
+    display: flex;
+    margin-top: 20vh;
+    width: 45%;
+    gap: 20px;
+}
+
+.programaçao .logodisney,
+.programaçao .logoccxp {
+    width: 10vw;
+}
+
+/* ---------------- FUNDO ---------------- */
+
+.conjunto {
+    width: 100%;
+    background-image: url(Imagens/background_programação.webp);
+    background-position: center;
+    background-size: cover;
+    z-index: 10;
+    position: relative;
+}
+
+/* ---------------- LISTA ---------------- */
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+/* ---------------- ANIMAÇÃO ---------------- */
+
+@keyframes textoinfinito {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+    width: 100%;
+    height: 70vh;
+    background-image: url(Imagens/background_footer.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+/* TEXTO GIGANTE NO FUNDO */
+footer .textoinfinito {
+    position: absolute;
+    bottom: -5vw;
+    left: 0;
+    display: flex;
+    width: max-content;
+    gap: 3vw;
+}
+
+footer .textoinfinito h3 {
+    color: rgba(185, 185, 185, 0.3);
+    font-size: 12vw;
+    mix-blend-mode: color-dodge;
+    font-weight: 700;
+    animation: textoinfinito 15s linear infinite;
+}
+
+/* CONTEÚDO PRINCIPAL */
+footer .conteudofooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 13vw;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* LOGO */
+footer .logo .logop {
+    width: 22vw;
+}
+
+/* REDES */
+footer .redessociais {
+    text-align: center;
+}
+
+footer .redessociais h3 {
+    font-size: 1.2vw;
+    font-weight: 400;
+    margin-bottom: 1.5vw;
+}
+
+footer .icones {
+    display: flex;
+    gap: 2vw;
+    justify-content: flex-end;
+}
+
+footer .icones img {
+    height: 5vh;
+}
+
+/* ---------------- RESPONSIVO ---------------- */
+
+@media (max-width: 600px) {
+
+    body {
+        text-align: center;
+    }
+
+    section {
+        padding: 10vw 6vw;
+    }
+
+    /* HEADER */
+    header {
+        padding: 6vw;
+        justify-content: left;
+    }
+
+    header .logodisneyplus {
+        width: 30vw;
+    }
+
+    /* HERO */
+
+    .Hero {
+        background-position: 0%;
+        background-size: cover;
+        padding: 4vh 6vw 2vw 6vw;
+        align-items: center;
+        text-align: center;
+
+        .bg{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        object-fit: cover;
+    }
+    }
+
+    .Hero .Logotitulo {
+        width: 100%;
+        margin-top: 35vw;
+    }
+
+    .Hero .Logotitulo .Logopercy {
+        margin-top: 30vh;
+        width: 75vw;
+    }
+
+    .Hero .texto1 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .Hero .texto1 h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .Hero .texto1 p {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    /* IBIRA */
+
+    .ibira h2 {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .ibira .corpo {
+        flex-direction: column;
+        align-items: center;
+        gap: 8vw;
+    }
+
+    .ibira .corpo .card1 {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .ibira .corpo p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* ATORES */
+
+    .atores h2 {
+        font-size: 28px;
+    }
+
+    .atores .corpo p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .atores .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6vw;
+    }
+
+    .atores .cards img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* PROGRAMAÇÃO */
+
+    .programaçao {
+    padding-top: 20vh;
+    }
+
+    .programaçao h2 {
+    padding-top: 14vh;
+    font-size: 30px;
+    }
+
+    .programaçao .corpo {
+        padding-top: 0vh;
+        font-size: 20px;
+        gap: 12px;
+    }
+
+    .programaçao .patrocinadores {
+        width: 100%;
+        justify-content: center;
+        margin-top: 5vh;
+        gap: 9vw;
+    }
+
+    .programaçao .logodisney,
+    .programaçao .logoccxp {
+        width: 30vw;
+    }
+
+    .conjunto{
+        background-image: url(Imagens/background_programação_mobile.webp);
+        background-position: center;
+        background-size: cover;
+
+        
+    }
+
+    /* FOOTER */
+    
+    footer .textoinfinito {
+    bottom: -7vw;
+    }
+
+    footer {
+        background-image: url(Imagens/background_footer_mobile.webp);
+        background-size: cover;
+        height: auto;
+        padding-bottom: 10vw;
+    }
+
+    footer .textoinfinito h3 {
+        font-size: 20vw;
+    }
+
+    footer .conteudofooter {
+        flex-direction: column;
+        gap: 10vw;
+        padding: 10vw 6vw;
+        text-align: center;
+    }
+
+    footer .logo .logop {
+        width: 60vw;
+    }
+
+    footer .redessociais h3 {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    footer .icones {
+        justify-content: center;
+    }
+
+}
